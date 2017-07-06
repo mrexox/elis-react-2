@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -24,6 +25,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# elis-react
+Elist Type on Rails and with ReactJS
+>>>>>>> 13884170fab13e0374cfee5d2b6b9998f2232bb8
 =======
 # elis-react
 Elist Type on Rails and with ReactJS
