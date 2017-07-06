@@ -1,0 +1,48 @@
+# app/assets/javascripts/components/posts.js.coffee
+
+@Posts = React.createClass
+	getInitialState: ->
+		brief: @props.posts[0]
+		posts: @props.posts
+		images: @props.images
+
+	getDefaultProps: ->
+		posts: []
+
+	changeBrief: (post) ->
+		@setState brief: post
+
+	handleSavedImage: (image) ->
+		images = @state.images
+		images.unshift(image)
+		@setState
+			images: images
+
+	# Check this callback
+	handleUpdatePost: (post, data) ->
+		index = @state.posts.indexOf post
+		p = @state.posts[index]
+		p.image_id = data.image_id
+		p.title = data.title
+		p.permalink = data.permalink
+		p.text = data.text
+		p.tags = data.tags
+		@setState posts: @state.posts
+		
+	render: ->
+		briefImage = @state.images.find((img) => img.id == @state.brief.image_id)
+		React.DOM.div
+			className: 'image-divider'
+			React.DOM.div
+				className: 'body-wrapper'
+				React.DOM.h3 null, 'Posts'
+				React.DOM.div
+					className: 'posts'
+					# Left side - list of posts
+					React.createElement PostsList, posts: @state.posts, changeBrief: @changeBrief, briefId: @state.brief.id
+
+					# Right side - brief of a selected (recent) post
+					React.DOM.div
+						className: 'posts__brief'
+						React.createElement Post, key: @state.brief.id, post: @state.brief, handleUpdatePost: @handleUpdatePost, image: briefImage
+			React.createElement Images, images: @state.images, handleSavedImage: @handleSavedImage

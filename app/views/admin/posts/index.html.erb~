@@ -1,0 +1,4 @@
+<%# index.html.erb %>
+
+<h1>Posts</h1>
+<%= react_component 'Posts', { posts: @posts, images: @images } %>

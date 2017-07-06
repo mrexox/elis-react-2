@@ -1,0 +1,56 @@
+# app/assets/javascripts/components/images.js.coffee
+
+@Images = React.createClass
+	getInitialState: ->
+		images: @props.images
+		
+	handleDeleteImage: (image) ->
+		$.ajax
+			method: 'DELETE'
+			url: "/admin/images/#{ image.id }"
+			dataType: 'JSON'
+			success: () =>
+				images = @state.images.slice()
+				index = images.indexOf image
+				images.splice(index, 1)
+				@replaceState images: images
+				
+	componentDidMount: ->
+		self = this
+		$('.image').on 'contextmenu', (e) ->
+			e.preventDefault()
+			console.log(e.clientX, e.clientY, e.target.parentNode.dataset.imageid)
+
+	handleNewImage: (file) ->
+		if !file
+			return
+		formData = new FormData()
+
+		formData.append 'image[data]', file
+
+		$.ajax
+			url: '/admin/images'
+			method: 'POST'
+			data: formData
+			cache: false
+			contentType: false
+			processData: false
+			success: (data) =>
+				@props.handleSavedImage(data)
+			error: (err) =>
+				alert("Was unable to upload an image. Sorry...")
+
+
+	render: ->
+		if @state.images
+			images = React.DOM.div {className:'images'},
+				for image in @state.images
+					React.createElement Image, image: image, key: image.id, handleDeleteImage: @handleDeleteImage, handleUseImageForBrief: @props.handleUseImageForBrief
+		else
+			images = React.DOM.div {className:'images'}, 'No Images'
+		React.DOM.div
+			className: 'images-field'
+			React.DOM.h3 null, 'Images'
+			React.createElement ImageUploader, handleSubmit: @handleNewImage
+			images
+

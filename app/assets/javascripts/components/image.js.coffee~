@@ -1,0 +1,14 @@
+# app/assets/javascripts/components/image.js.coffee
+
+@Image = React.createClass
+	deleteImage: ->
+		@props.handleDeleteImage @props.image
+
+	render: ->
+		React.DOM.div
+			className: 'image'
+			'data-imageId': @props.image.id
+			React.createElement 'img',
+				src: 'http://localhost:3000' + @props.image.image.url
+				alt: 'Image here'
+

@@ -1,0 +1,110 @@
+// Place all the styles related to the admin/posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$orange-hover:  #f1d200;
+$red-hover: #ff5c00;
+$tag-background: #eee;
+
+div {
+    font-family: sans-serif;
+}
+
+.body-wrapper {
+    flex-grow: 9;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.posts__index {
+    list-style-type: none;
+    width: 20%;
+    border-right: 1px solid #eee;
+    .post {
+	margin: 10px 0 10px 0;
+	padding: 5px 0 5px 10px;
+	cursor: pointer;
+    }
+    .post--active {
+	border-left: 5px solid #1dd;
+	background-color: #eee;
+    }
+    .post__title {
+	margin: 0 auto;
+    }
+    .post__text {
+	display: none;
+    }
+    .post__permalink {
+	display: none;
+    }
+}
+
+.form-control {
+    display: block;
+}
+
+.posts__brief {
+    flex-grow: 9;
+    padding: 10px 30px 10px 30px;
+    .post, .post--edit {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+    }
+    .post__title {
+	margin: 0 auto;
+    }
+    .post__text {
+	flex-grow: 6;
+	width: 100%;
+	height: 300px;
+    }
+    .post__created-at {
+	display: block;
+	color: gray;
+	margin: 0 auto;
+    }
+    .btns {
+	align-self: flex-end;
+    }
+    .btn {
+	display: inline-block;
+    }
+    .tag {
+	display: inline-block;
+	margin: 2px;
+	border-radius: 20px;
+	padding: 5px 10px 5px 10px;
+	background-color: $tag-background;
+    }
+}
+
+.btn {
+    margin: 3px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn--orange {
+    background-color: orange;
+    color: white;
+}
+
+.btn--orange:hover {
+    background-color: $orange-hover;
+}
+
+.btn--red {
+    background-color: red;
+    color: white;
+}
+
+.btn--red:hover {
+    background-color: $red-hover;
+}

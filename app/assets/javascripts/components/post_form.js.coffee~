@@ -1,0 +1,34 @@
+# app/assets/javascripts/components/post_form.js.coffee
+
+@PostForm = React.createClass
+	createPost: ->
+		
+
+	render:->
+		React.DOM.div
+			className: 'post--edit'
+			React.DOM.input
+				className: 'form-control post__title'
+				type: 'text'
+			React.DOM.div
+				className: 'post__image'
+				React.DOM.img
+					src: @props.image.image.url
+			React.DOM.textarea
+				className: 'form-control post__text'
+			React.DOM.input
+				className: 'form-control post__permalink'
+				type: 'text'
+			React.DOM.input
+				className: 'form-control post__tags'
+				type: 'text'
+			React.DOM.div
+				className: 'btns'
+				React.DOM.div
+					className: 'btn btn--orange'
+					onClick: @createPost
+					'Create'
+				React.DOM.div
+					className: 'btn btn--red'
+					onClick: @cancenNew
+					'Cancel'

@@ -1,0 +1,135 @@
+// Place all the styles related to the admin/images controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image-divider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.image-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.image-input-label,
+.submit-btn {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    border: 1px solid #1ff;
+    border-radius: 20px;
+    padding: 10px 5px 10px 5px;
+}
+
+.image-input-label:hover,
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: #1ff;
+}
+
+.submit-btn {
+    display: none;
+}
+
+.image-preview {
+    margin: 10px 0 10px 0;
+}
+
+.images-field {
+    width: 15%;
+    overflow: scroll;
+}
+
+.image-preview > img {
+    max-width: 100%;
+}
+
+.images {
+    max-height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.image {
+    max-height: 50%;
+    max-width: 95%;
+    margin: 3px;
+    padding-left: 3px;
+    position: relative;
+}
+
+/* Delete span on image */
+.image-delete {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background-color: #f88;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 5px 2px 5px;
+}
+
+.image-delete:hover {
+    background-color: #f00;
+}
+
+
+/* Use this image for brief */
+.image-use-btn {
+    position: absolute;
+    bottom: 10px;
+    width: 30px;
+    border: 1px solid #1bb;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    opacity: 0.8;
+    padding: 3px 5px 2px 5px;
+    border-radius: 20px;
+    margin-right: auto;
+}
+
+.image-use-btn:hover {
+    background-color: #1bb;
+    color: white;
+    opacity: 1;
+}
+
+.image:hover {
+    border-left: 3px solid #1dd;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.image > img:hover {
+    margin-left: -3px;
+}
+
+.delete {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: gray;
+    width: 10px;
+}
+
+.delete:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.images > .image > img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}

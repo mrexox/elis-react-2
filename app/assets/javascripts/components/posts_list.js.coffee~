@@ -1,0 +1,25 @@
+# app/assets/javascripts/components/posts_list.js.coffee
+
+@PostsList = React.createClass
+	handleChangeBrief: (id) ->
+		post = (p for p in @props.posts when p.id is id)[0]
+		@props.changeBrief(post)
+
+	render: ->
+		React.DOM.ul
+			className: 'posts__index'
+			for post in @props.posts
+				React.DOM.li
+					key: post.id
+					className: 'post'
+					onClick: @handleChangeBrief.bind(this, post.id)
+					React.DOM.div
+						className: 'post__title'
+						post.title
+					React.DOM.div
+						className: 'post__created-at'
+						moment(post.created_at).format('DD-MM-YY')
+					React.DOM.div
+						className: 'post__permalink'
+						post.permalink
+
