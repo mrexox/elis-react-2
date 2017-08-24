@@ -38,6 +38,7 @@ div {
     }
     .posts__new-btn:hover {
 	background-color: #1ff;
+	color: white;
     }
     .post {
 	margin: 10px 0 10px 0;
@@ -131,4 +132,9 @@ div {
 
 .btn--red:hover {
     background-color: $red-hover;
+}
+
+.caption {
+    margin: 15px 0 3px 0;
+    color: #debdac;
 }

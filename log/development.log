@@ -11003,3 +11003,907 @@ Processing by Admin::PostsController#index as HTML
 Completed 200 OK in 1154ms (Views: 1130.5ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/admin/posts" for 127.0.0.1 at 2017-07-21 04:03:11 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 8488ms (Views: 8257.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-07-21 04:05:41 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 386ms (Views: 344.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-02 22:27:41 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/railties-5.1.1/lib/rails/templates/rails/welcome/index.html.erb (13.4ms)
+Completed 200 OK in 97ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 06:49:20 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (6.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 1884ms (Views: 1505.8ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 06:50:14 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 1188ms (Views: 949.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 06:59:28 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 1177ms (Views: 947.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 07:00:04 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 1199ms (Views: 982.8ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 07:03:06 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 1189ms (Views: 957.8ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 22:57:15 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (11.3ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 2382ms (Views: 1960.2ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:02:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:03:40 +0100
+  
+NameError (undefined local variable or method `posts' for #<ActionDispatch::Routing::Mapper:0x007f09ec083138>
+Did you mean?  post):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:04:09 +0100
+  
+ArgumentError (Route path not specified):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:04:17 +0100
+  
+NameError (uninitialized constant PostController):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:04:28 +0100
+  
+NameError (uninitialized constant PostsController):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:04:38 +0100
+  
+NameError (undefined local variable or method `posts_controller' for #<ActionDispatch::Routing::Mapper:0x007f09d87b7df0>):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:04:48 +0100
+  
+NameError (undefined local variable or method `posts' for #<ActionDispatch::Routing::Mapper:0x007f09c8f24788>
+Did you mean?  post):
+  
+config/routes.rb:3:in `block (2 levels) in <top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:05:14 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 265ms (Views: 143.1ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/admin/posts" for 127.0.0.1 at 2017-08-03 23:05:57 +0100
+Processing by Admin::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Wow", "text"=>"this is new post", "tags"=>["tag1", "taggg3"], "permalink"=>"permalink"}}
+Unpermitted parameter: :tags
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", "tag1"]]
+  [1m[36mTag Load (3.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", "taggg3"]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "taggg3"]]
+  [1m[35m (62.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "text", "permalink", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Wow"], ["text", "this is new post"], ["permalink", "permalink"], ["created_at", "2017-08-03 22:05:57.955362"], ["updated_at", "2017-08-03 22:05:57.955362"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 14], ["tag_id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 14], ["tag_id", 21]]
+  [1m[35m (69.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 224ms (Views: 2.8ms | ActiveRecord: 138.2ms)
+
+
+Started PUT "/admin/posts/14" for 127.0.0.1 at 2017-08-03 23:06:21 +0100
+Processing by Admin::PostsController#update as JSON
+  Parameters: {"post"=>{"title"=>"Wow", "text"=>"this is new post", "tags"=>[""], "image_id"=>"33", "permalink"=>"permalink"}, "id"=>"14"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = ?[0m  [["post_id", 14]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[31mDELETE FROM "posts_tags" WHERE "posts_tags"."post_id" = ? AND "posts_tags"."tag_id" IN (2, 21)[0m  [["post_id", 14]]
+  [1m[35m (75.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", ""]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", ""]]
+  [1m[35m (78.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 14], ["tag_id", 22]]
+  [1m[35m (74.1ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :tags
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "posts" SET "image_id" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["image_id", 33], ["updated_at", "2017-08-03 22:06:22.277634"], ["id", 14]]
+  [1m[35m (78.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 457ms (Views: 1.1ms | ActiveRecord: 314.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-03 23:19:44 +0100
+Processing by Admin::PostsController#index as */*
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.4ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 244ms (Views: 133.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/admin/posts/1" for 127.0.0.1 at 2017-08-03 23:20:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/admin/posts/1"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/posts/2" for 127.0.0.1 at 2017-08-03 23:20:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/admin/posts/2"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-03 23:20:28 +0100
+Processing by Admin::PostsController#index as */*
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 139ms (Views: 110.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/images" for 127.0.0.1 at 2017-08-03 23:20:33 +0100
+Processing by Admin::ImagesController#index as */*
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:24:03 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (8.2ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 1974ms (Views: 1556.9ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:27:12 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (45.6ms)
+Completed 200 OK in 1036ms (Views: 794.9ms | ActiveRecord: 11.9ms)
+
+
+Started PUT "/admin/posts/11" for 127.0.0.1 at 2017-08-05 10:30:43 +0100
+Processing by Admin::PostsController#update as JSON
+  Parameters: {"post"=>{"title"=>"Oops", "text"=>"post", "tags"=>["tagss", "lol"], "image_id"=>"", "permalink"=>"permalink245"}, "id"=>"11"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = ?[0m  [["post_id", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[31mDELETE FROM "posts_tags" WHERE "posts_tags"."post_id" = ? AND "posts_tags"."tag_id" = 19[0m  [["post_id", 11]]
+  [1m[35m (71.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", "tagss"]]
+  [1m[36mTag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", "lol"]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "lol"]]
+  [1m[35m (76.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 11], ["tag_id", 19]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 11], ["tag_id", 23]]
+  [1m[35m (67.6ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :tags
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 539ms (Views: 0.6ms | ActiveRecord: 233.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:38:48 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.8ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 743ms (Views: 588.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:46:20 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (26.7ms)
+Completed 500 Internal Server Error in 1421ms (ActiveRecord: 10.5ms)
+
+
+  
+ActionView::Template::Error (source sequence is illegal/malformed utf-8):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1679038126314093495_69948726712600'
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:47:00 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 550ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::Template::Error ("\xC2" followed by "\xFB" on UTF-8):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1679038126314093495_69948739100360'
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:47:33 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 677ms (Views: 545.4ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:49:28 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 723ms (Views: 564.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:52:12 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 693ms (Views: 563.3ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:52:28 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 252ms (Views: 129.2ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-05 10:58:42 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 1077ms (Views: 951.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:08:15 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (5.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (28.4ms)
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:08:20 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (15.9ms)
+Completed 500 Internal Server Error in 3716ms (ActiveRecord: 13.9ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3883434022111763508_47370741616160'
+Completed 200 OK in 967ms (Views: 897.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:13:46 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.4ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 686ms (Views: 557.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:15:08 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 264ms (Views: 139.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:19:13 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.4ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 672ms (Views: 548.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:19:23 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.7ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 732ms (Views: 613.7ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:19:43 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 717ms (Views: 596.8ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:19:58 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 297ms (Views: 158.7ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:22:29 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 694ms (Views: 552.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2017-08-09 16:26:00 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.7ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 259ms (Views: 140.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:26:32 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 1927ms (Views: 1668.4ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:51:42 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 669ms (Views: 529.6ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:52:03 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.7ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 735ms (Views: 583.6ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:52:30 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 685ms (Views: 545.8ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:52:40 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 758ms (Views: 604.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:53:10 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 717ms (Views: 582.8ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:53:28 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.7ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 742ms (Views: 585.1ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:55:03 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 761ms (Views: 580.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:56:22 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (2.2ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 845ms (Views: 689.1ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:57:31 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 806ms (Views: 669.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:57:59 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 393ms (Views: 262.0ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:58:58 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 675ms (Views: 534.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:59:19 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 387ms (Views: 263.3ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:59:34 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.7ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 404ms (Views: 265.9ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 16:59:48 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 430ms (Views: 296.3ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 17:00:18 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 694ms (Views: 542.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 17:02:31 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.5ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 668ms (Views: 547.0ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 17:02:38 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.6ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 276ms (Views: 147.7ms | ActiveRecord: 9.3ms)
+
+
+Started PUT "/admin/posts/12" for 127.0.0.1 at 2017-08-09 17:07:56 +0100
+Processing by Admin::PostsController#update as JSON
+  Parameters: {"post"=>{"title"=>"Wow", "text"=>"pas", "tags"=>["tag2"], "image_id"=>"", "permalink"=>"90asd"}, "id"=>"12"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "posts_tags" ON "tags"."id" = "posts_tags"."tag_id" WHERE "posts_tags"."post_id" = ?[0m  [["post_id", 12]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[31mDELETE FROM "posts_tags" WHERE "posts_tags"."post_id" = ? AND "posts_tags"."tag_id" = 3[0m  [["post_id", 12]]
+  [1m[35m (64.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."name" = ?[0m  [["name", "tag2"]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts_tags" ("post_id", "tag_id") VALUES (?, ?)[0m  [["post_id", 12], ["tag_id", 3]]
+  [1m[35m (63.6ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :tags
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "posts" SET "text" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["text", "pas"], ["updated_at", "2017-08-09 16:07:57.277227"], ["id", 12]]
+  [1m[35m (74.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 446ms (Views: 1.3ms | ActiveRecord: 215.2ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 23:06:09 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (3.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 2922ms (Views: 2576.3ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-09 23:06:25 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (2.1ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (1.9ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 329ms (Views: 211.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-09 23:06:35 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.0ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 184ms (Views: 152.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-09 23:06:52 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (1.1ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (5.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 232ms (Views: 145.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-09 23:07:08 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 162ms (Views: 127.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-09 23:20:35 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.8ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 720ms (Views: 550.8ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-08-09 23:21:21 +0100
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (0.9ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 777ms (Views: 642.1ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-08-18 22:34:39 +0100
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  [1m[36mHABTM_Tags Load (14.2ms)[0m  [1m[34mSELECT "posts_tags".* FROM "posts_tags" WHERE "posts_tags"."post_id" IN (14, 13, 12, 11, 6, 5, 4, 3)[0m
+  [1m[36mTag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE "tags"."id" IN (22, 20, 3, 19, 23, 5, 2, 4, 16)[0m
+  Rendering admin/posts/index.html.erb within layouts/application
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" ORDER BY created_at DESC[0m
+  Rendered admin/posts/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 6659ms (Views: 6157.9ms | ActiveRecord: 22.1ms)
+
+

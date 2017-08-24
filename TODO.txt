@@ -1,0 +1,11 @@
+Button for adding an image
+The caller respones for the method useImage in image_list component
+
+Add a dynamic button for applying image adding to the post
+
+Messages under posts
+
+Good text editor (js)
+
+Slider images (using image_list component)
+
