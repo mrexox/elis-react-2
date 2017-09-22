@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170619140614) do
+ActiveRecord::Schema.define(version: 20170921212841) do
 
   create_table "admin_users", force: :cascade do |t|
     t.string "login", null: false
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20170619140614) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "post_id"
+    t.index ["post_id"], name: "index_images_on_post_id"
   end
 
   create_table "likes", force: :cascade do |t|
@@ -48,6 +50,7 @@ ActiveRecord::Schema.define(version: 20170619140614) do
     t.integer "image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "views", default: 0
     t.index ["image_id"], name: "index_posts_on_image_id"
   end
 

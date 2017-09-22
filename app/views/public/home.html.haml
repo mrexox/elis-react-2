@@ -1,0 +1,4 @@
+.slider
+%p= @posts.size
+.posts
+  = render :partial => 'posts', :locals => {:posts => @posts}

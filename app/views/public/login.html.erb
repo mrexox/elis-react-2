@@ -1,0 +1,14 @@
+<h1>Log in</h1>
+<%= form_tag '/authorize' do%>
+	<div>
+	<lable name="login">
+		<input id="login" type="text" name="login">
+	</lable>
+	</div>
+	<div>
+	<lable name="password">
+		<input id="password" type="password" name="password">
+	</lable>
+	</div>
+	<input type="submit" value="Submit">
+<% end %>

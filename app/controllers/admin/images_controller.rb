@@ -1,7 +1,8 @@
-class Admin::ImagesController < ApplicationController
-  # JSON index
+class Admin::ImagesController < Admin::AuthorizedController
+  before_action :authenticate
+  
   def index
-    @images = Image.sorted
+    @images = Image.sorted.where(:post_id => nil)
     respond_to do |format|
       format.json {render json: @images, status: :ok}
     end

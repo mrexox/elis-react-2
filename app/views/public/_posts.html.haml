@@ -1,0 +1,7 @@
+- posts.each do |post|
+  .post
+    .post__title= post.title
+    .post__text=  post.text
+    - if post.image
+      .post__image= post.image.image_url
+    .post__views= post.views
