@@ -38,7 +38,9 @@
 			
 			var formData = new FormData();
 			formData.append('post[title]', title);
-			formData.append('post[image]', this.state.file);
+			if (this.state.imageUrl) {
+				formData.append('post[image]', this.state.file);
+			}
 			formData.append('post[text]', text);
 			formData.append('post[tags]', tags);
 			formData.append('post[permalink]', permalink);
@@ -49,9 +51,9 @@
 				cache: false,
 				contentType: false,
 				processData: false, 
-				success: function(post) {
-					alert('Success!');
-					_this.props.handleSendPost(post);
+				success: function(data) {
+					console.log(_this);
+					_this.props.handleSendPost(_this.props.post, data);
 				},
 				error:  function(err) {
 					alert("Was unable to upload an image."+err.responseText);
@@ -62,9 +64,9 @@
 			var imagePreview, imageUrl;
 			var post = this.props.post || null;
 			if (this.state.imageUrl) {
-				imagePreview = (<img src={imageUrl} />);
-			} else if (post) {
-				imagePreview = (<img src={post.image.image.url} />);
+				imagePreview = (<img src={this.state.imageUrl} />);
+			} else if (post && post.logo) {
+				imagePreview = (<img src={post.logo.url} />);
 			} else {
 				imagePreview = null;
 			}
@@ -81,7 +83,7 @@
 						<form>
 							<label htmlFor='file'
 										 className='image-input-label'>
-								Choose...
+					Выбрать...
 							</label>
 							<input className='image-input'
 										 type='file'
@@ -109,7 +111,7 @@
 					</div>
 					<input className='form-control post__tags'
 								 type='text'
-				defaultValue={post ? post.tags.join(', ') : undefined}/>
+				defaultValue={post ? post.tags.map(function(t){return t.name}).join(', ') : undefined}/>
 					<div className='btns'>
 						<div className='btn btn--orange'
 								 onClick={this.handleSubmit}>

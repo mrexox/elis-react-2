@@ -1,7 +1,14 @@
-- posts.each do |post|
-  .post
-    .post__title= post.title
-    .post__text=  post.text
-    - if post.image
-      .post__image= post.image.image_url
-    .post__views= post.views
+.home-posts
+  .caption Recent Posts
+  .posts
+    - posts.each do |post|
+      .post
+        .post__title= post.title
+        - if post.logo
+          .post__logo= image_tag( post.logo.url )
+        .post__text=  post.text.truncate_words 15
+        .post__views= post.views.to_s + ' Views'
+        .post__likes= post.likes.size.to_s + ' Likes'
+        .post__tags
+          - post.tags.each do |tag|
+            .post__tag= '#' + tag.name

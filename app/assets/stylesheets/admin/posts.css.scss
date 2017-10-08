@@ -1,0 +1,182 @@
+// Place all the styles related to the admin/posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+$red-hover: #ff5c00;
+$orange-hover: #f1d200;
+$tag-background: #eee;
+
+body {
+    font-family: sans-serif;
+}
+
+// Posts on the left side
+.posts__index {
+		display: inline-block;
+    list-style-type: none;
+    width: 20%;
+    border-right: 1px solid #eee;
+		
+		// Inside of the posts list
+    .posts__new-btn {
+				display: block;
+				border: 1px solid #1ff;
+				width: 15px;
+				padding: 10px;
+				text-align: center;
+				height: 15px;
+				border-radius: 50%;
+				cursor: pointer;
+    }
+		
+    .posts__new-btn:hover {
+				background-color: #1ff;
+				color: white;
+    }
+		
+    .post {
+				margin: 10px 0 10px 0;
+				padding: 5px 0 5px 10px;
+				cursor: pointer;
+    }
+		
+    .post--active {
+				border-left: 5px solid #1dd;
+				background-color: #eee;
+    }
+		
+    .post__title {
+				margin: 0 auto;
+    }
+		
+    .post__text {
+				display: none;
+    }
+		
+    .post__permalink {
+				display: none;
+    }
+		
+		.post__views {
+				color: gray;
+		}
+}
+
+// Current/selected post
+.posts__brief {
+		display: inline-block;
+		vertical-align: top;
+    padding: 10px 30px 10px 30px;
+		
+		// Oh-oh-oh shouldn't be so
+		width: 70%;
+		
+    .post,
+		.post--edit {
+				/* display: flex;
+					 flex-flow: row wrap;
+					 align-items: flex-start; */
+				
+				.post__title {
+						margin: 5px 0 5px 0;
+						width: 30%;
+						margin: 0 auto;
+						text-align: center;
+				}
+				
+				.post__created-at {
+						text-align: center;
+						color: gray;
+				}
+
+				.post__image {
+						width: 45%;
+						display: inline-block;
+						padding: 5px 0 5px 0;
+				}
+				.post__image > img {
+						width: 100%;
+						margin: 0 auto;
+						border-radius: 10px;
+				}
+								
+				.post__text {
+						width: 100%;
+						height: auto;
+						padding: 5px 10px 5px 10px;
+						color: #999;
+						font-style: italic;
+				}
+   			
+				.btns {
+						align-self: flex-end;
+						text-align: right;
+				}
+				
+				.tag {
+						display: inline-block;
+						margin: 2px;
+						border-radius: 20px;
+						padding: 5px 10px 5px 10px;
+						font-style: italic;
+						background-color: $tag-background;
+				}
+
+				.image-input {
+						width: 0.1px;
+						height: 0.1px;
+						opacity: 0;
+						overflow: hidden;
+						position: absolute;
+						z-index: -1;
+				}
+
+				.image-input-label {
+						width: 100px;
+						text-align: center;
+						display: block;
+						margin: 5px 0 5px 0;
+						border: 1px solid #1ff;
+						border-radius: 20px;
+						padding: 5px 2px 5px 2px;
+				}
+
+				.image-input-label:hover {
+						cursor: pointer;
+						background-color: #1ff;
+				}
+		}
+}
+
+/* REST buttons */
+.btn {
+    margin: 3px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+		display: inline-block;
+}
+
+.btn--orange {
+    background-color: orange;
+    color: white;
+}
+.btn--orange:hover {
+    background-color: $orange-hover;
+}
+
+.btn--red {
+    background-color: red;
+    color: white;
+}
+.btn--red:hover {
+    background-color: $red-hover;
+}
+
+/* Caption above the field */
+.caption {
+    margin: 15px 0 3px 0;
+    color: #debdac;
+}

@@ -1,19 +1,15 @@
 class Admin::ConsoleController < Admin::AuthorizedController
   before_action :authenticate
-  
   def index
-    @posts = Post.all.sorted.includes(:tags).as_json(include: [:tags, :image])
+    @posts = Post.all.sorted.includes(:tags).as_json(include: [:tags])
     @messages = Message.all.sorted
-    @images = Image.sorted
+    render 'index', layout: 'admin'
   end
 
   def create_post
-    @image = Image.new
-    @image.image = image_params[:image]
-    
     @post = Post.new(post_params)
     @post.permalink.downcase!
-    @post.image = @image
+    @post.logo = image_params[:image]
     
     begin
       @post.tags = parsed_tags
@@ -30,10 +26,14 @@ class Admin::ConsoleController < Admin::AuthorizedController
     end
   end
 
-  def update_post
+  def update_post    
     @post = Post.find(params[:id])
     @post.tags = []
     @post.permalink.downcase!
+    # fix this. want to add images
+    if image_params[:image]
+      @post.logo = image_params[:image]
+    end
     
     begin
       @post.tags = parsed_tags
@@ -42,9 +42,11 @@ class Admin::ConsoleController < Admin::AuthorizedController
       render json: {"error": e.message}, status: 500
       return
     end
-    if post_params[:image_id].present?
-      @post.image = Image.find(post_params[:image_id])
-    end
+    
+    # if post_params[:image_id].present?
+    #   @post.image = Image.find(post_params[:image_id])
+    # end
+    
     if @post.update_attributes(post_params)
       render json: @post.to_json(include: :tags), status: :ok
     else

@@ -5,17 +5,8 @@
     = csrf_meta_tags 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
-  %body
-    %nav.navigation
-      %ul
-        %li= link_to 'Home', home_path
-        %li Blog
-        %li Contact me
-        %li Shop
-        %li About me
-					
+  %body					
     -if !flash[:error].nil? 
       .error= flash[:error]
-    %div.body
-      = yield 
+    = yield 
   

@@ -1,0 +1,66 @@
+.home-posts {
+		padding: 10px 10px 0 10px;
+		background-color: #f3f3f3;
+}
+
+.home-posts .caption {
+		text-align: center;
+		font-size: 20pt;
+		color: #343434;
+		margin-bottom: 30px;
+}
+
+.home-posts .posts {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around; 
+/*		align-items: flex-start; maybe it's better */
+}
+
+.home-posts .posts .post {
+		margin-top: 10px; /* BUGGY FIX */
+		width: 40%;
+		height: auto;
+		padding: 20px;
+		border: 1px solid #e9dcbe;
+		border-radius: 20px;
+		color: #343434;
+		background-color: white;
+		box-shadow: 0 0 10px 1px #ccc;
+}
+
+.home-posts .posts .post .post__title {
+		font-size: 16pt;
+		text-align: center;
+		margin-bottom: 10px;
+}
+
+.home-posts .posts .post .post__text {
+		margin: 10px 0 10px 0;
+}
+
+.home-posts .posts .post .post__logo {
+		width: 90%;
+		margin: 0 auto;
+}
+
+.home-posts .posts .post .post__logo img {
+		width: 100%;
+		border-radius: 15px;
+}
+.home-posts .posts .post .post__views {
+		display: inline-block;
+}
+
+.home-posts .posts .post .post__likes {
+		display: inline-block;
+		float: right;
+}
+
+.home-posts .posts .post .post__tags {
+		text-align: right;
+}
+.home-posts .posts .post .post__tag {
+		display: inline-block;
+		color: #8e8b82;
+}

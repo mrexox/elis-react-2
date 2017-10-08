@@ -1,6 +1,5 @@
 class Image < ApplicationRecord
-  belongs_to :post
-
+  belongs_to :image_list
   # Scopes
   scope :sorted, lambda {order('created_at DESC')}
 

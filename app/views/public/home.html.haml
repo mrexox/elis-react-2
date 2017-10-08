@@ -1,4 +1,3 @@
-.slider
-%p= @posts.size
-.posts
+= render :partial => 'slider', :locals => {:slider_images => @slider_images}
+-if !@posts.empty?
   = render :partial => 'posts', :locals => {:posts => @posts}

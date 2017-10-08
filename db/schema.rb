@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170921212841) do
+ActiveRecord::Schema.define(version: 20171004114419) do
 
   create_table "admin_users", force: :cascade do |t|
     t.string "login", null: false
@@ -19,12 +19,19 @@ ActiveRecord::Schema.define(version: 20170921212841) do
     t.string "avatar"
   end
 
+  create_table "image_lists", force: :cascade do |t|
+    t.integer "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_image_lists_on_post_id"
+  end
+
   create_table "images", force: :cascade do |t|
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "post_id"
-    t.index ["post_id"], name: "index_images_on_post_id"
+    t.integer "image_lists_id"
+    t.index ["image_lists_id"], name: "index_images_on_image_lists_id"
   end
 
   create_table "likes", force: :cascade do |t|
@@ -47,17 +54,22 @@ ActiveRecord::Schema.define(version: 20170921212841) do
     t.string "title", null: false
     t.text "text", null: false
     t.string "permalink", null: false
-    t.integer "image_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "views", default: 0
-    t.index ["image_id"], name: "index_posts_on_image_id"
+    t.string "logo"
   end
 
   create_table "posts_tags", id: false, force: :cascade do |t|
     t.integer "post_id"
     t.integer "tag_id"
     t.index ["post_id", "tag_id"], name: "index_posts_tags_on_post_id_and_tag_id"
+  end
+
+  create_table "slider_images", force: :cascade do |t|
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "tags", force: :cascade do |t|
