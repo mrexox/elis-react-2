@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+%html
+  %head
+    %title ElisReact
+    = csrf_meta_tags 
+  %body					
+    -if !flash[:error].nil? 
+      .error= flash[:error]
+    = yield 
+  

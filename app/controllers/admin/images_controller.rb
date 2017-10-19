@@ -23,7 +23,6 @@ class Admin::ImagesController < Admin::AuthorizedController
     unused = Post.all.where(:image_id => @image.id).empty?
     if unused
       @image.destroy
-      puts 'olala'
       render json: {}, status: :ok
     else
       render json: {"message":"Image with id=#{ @image.id } is referenced and can't be deleted"}, status: :unprocessible_entity

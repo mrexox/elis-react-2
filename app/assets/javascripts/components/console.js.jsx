@@ -1,13 +1,28 @@
 // app/assets/javascripts/components/console.js.jsx
 
 (function() {
+	/* Console for manipulatin data on the site, has:
+	 handleCreateSliderImage - when a Slider Image is created
+	 handleDeleteSliderImage - when a Slider Image is deleted
+	 changeBrief - for switching between posts
+	 handleEditPost - for switching to Edit mode
+	 handleNewPost - for switching to New Post mode
+	 handleCreatePost - when post is created
+	 handleCancelNewPost - for switching from New Post mode to normal
+	 handleCancelEditPost - the same but from Edit Post mode
+	 handleUpdatePost - when post is updated
+	 handleDeletePost - when post is deleted
+	 handleDeleteMessage - when a message is deleted
+	 */
 	this.Console = React.createClass({
 		getInitialState: function() {
 			return {
 				newPost: false,
 				brief: this.props.posts[0],
 				posts: this.props.posts,
+				page: 0,
 				images: this.props.images,
+				slider_images: this.props.slider_images,
 				messages: this.props.messages
 			};
 		},
@@ -18,6 +33,26 @@
 				images: [],
 				messages: []
 			};
+		},
+
+		handleCreateSliderImage: function(newImageData) {
+			var slider = this.state.slider_images;
+			slider.push(newImageData);
+			this.setState({
+				slider_images: slider
+			});
+		},
+		
+		handleDeleteSliderImage: function(imageId) {
+			var slider = this.state.slider_images;
+			var sliderImage =
+						$.grep(slider,
+									 function(img){return img.id == imageId;})[0];
+			var index = slider.indexOf(sliderImage);
+			slider.splice(index, 1);
+			this.setState({
+				slider_images: slider
+			});
 		},
 		
 		changeBrief: function(post) {
@@ -101,6 +136,7 @@
 			});
 		},
 		
+		/*		// Not in use yet, was in ImageList before
 		useForBrief: function(image) {
 			var brief;
 			brief = this.state.brief;
@@ -109,6 +145,7 @@
 				brief: brief
 			});
 		},
+		 */
 		
 		render: function() {
 			var briefImage, postBrief = void 0;
@@ -137,12 +174,17 @@
 			}
 			return (
 				<div className='body-wrapper'>
+					<h3>Слайдер</h3>
+					<Slider
+						 slider_images={this.state.slider_images}
+						 handleDeleteImage={this.handleDeleteSliderImage}
+						 handleCreateImage={this.handleCreateSliderImage} />
 					<h3>Посты</h3>
 					<div className='posts'>
 						<PostsList
 							 posts={this.state.posts}
 							 changeBrief={this.changeBrief}
-							 briefId={this.state.bief ? this.state.brief.id : null}
+							 briefId={this.state.brief ? this.state.brief.id : null}
 							 handleNewPost={this.handleNewPost} />
 
 						<div className='posts__brief'>

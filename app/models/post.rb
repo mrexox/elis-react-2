@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   has_one :image_list
+  has_many :images, :through => :image_list
   has_and_belongs_to_many :tags
   has_many :likes
   # Scopes

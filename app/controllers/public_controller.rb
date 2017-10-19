@@ -1,7 +1,7 @@
 # coding: utf-8
 class PublicController < ApplicationController
   def login
-    render 'login'
+    render 'login', layout: 'login'
   end
 
   def logout

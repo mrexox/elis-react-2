@@ -12,19 +12,21 @@ body {
     font-family: sans-serif;
 }
 
-// Posts on the left side
+/* Posts on the left side */
 .posts__index {
 		display: inline-block;
     list-style-type: none;
     width: 20%;
     border-right: 1px solid #eee;
 		
-		// Inside of the posts list
+		/* Inside of the posts list */
     .posts__new-btn {
 				display: block;
-				border: 1px solid #1ff;
+				margin: 0 auto;
+				color: #ccc;
+				border: 1px solid #ccc;
 				width: 15px;
-				padding: 10px;
+				padding: 10px 11px 11px 10px;
 				text-align: center;
 				height: 15px;
 				border-radius: 50%;
@@ -33,7 +35,8 @@ body {
 		
     .posts__new-btn:hover {
 				background-color: #1ff;
-				color: white;
+				color: black;
+				border-color: #1ff;
     }
 		
     .post {
@@ -61,6 +64,24 @@ body {
 		
 		.post__views {
 				color: gray;
+		}
+		
+		.page-number,
+		.prev-page,
+		.next-page {
+				padding: 2px 6px 3px 5px;
+				cursor: pointer;
+				border-radius: 50%;
+		}
+
+		.page-number.current-page {
+				color: gray;
+		}
+		
+		.page-number:hover,
+		.prev-page:hover,
+		.next-page:hover {
+				background-color: #1ff;
 		}
 }
 

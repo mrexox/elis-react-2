@@ -1,0 +1,13 @@
+class CreatePostsImagesListsImagesJoinTable < ActiveRecord::Migration[5.1]
+  def up
+    
+    add_reference :posts, :image_lists, :foreign_key => true,
+                  :index => true
+  end
+
+  def down
+    
+    remove_reference :posts, :image_lists, :foreign_key => true,
+                     :index => true
+  end
+end
