@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+AdminUser.create :login: 'elis', password: 'password', description: 'Admin of the site'
 
 Post.create title: 'New Logo', text: 'Meet my new logo', permalink: 'new-logo-1', tags: []
 Post.create title: 'Beautiful writing', text: 'Here are some of my works', permalink: 'beau-writing', tags: []

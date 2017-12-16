@@ -1,0 +1,9 @@
+%h1 Log in
+= form_tag '/authorize' do
+  %div
+    %lable{:name => "login"}
+      %input{ :id => "login", :type => "text", :name => "login"}
+  %div
+    %lable{ :name => "password"}
+      %input{ :id => "password", :type => "password", :name => "password"}
+  %input{ :type => "submit", :value => "Submit"}

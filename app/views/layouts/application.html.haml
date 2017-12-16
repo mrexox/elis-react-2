@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 %html
   %head
-    %title ElisReact
+    %title Elis Type
     = csrf_meta_tags 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
@@ -9,9 +9,9 @@
     %nav.navigation
       %ul
         %li= link_to 'Home', home_path
-        %li Blog
+        -#%li Blog
         %li Contact me
-        %li Shop
+        -#%li Shop
         %li About me
 					
     -if !flash[:error].nil? 

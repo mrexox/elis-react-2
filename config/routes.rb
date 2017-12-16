@@ -5,12 +5,16 @@ Rails.application.routes.draw do
   namespace :admin do
     # Enter admin area
     get '', to: 'console#index'   
+    
     # Posts 
     resources :posts, only: [:create, :update, :destroy]
+
     # Images (not in use yet)
     resources :images, only: [:index, :create, :destroy]
+    
     # Messages
     delete '/messages/:id', to: 'console#delete_message'
+
     # Slider Images
     resources :slider_images, only: [:create, :destroy]
   end

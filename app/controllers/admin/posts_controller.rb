@@ -38,10 +38,6 @@ class Admin::PostsController < Admin::AuthorizedController
       return
     end
     
-    # if post_params[:image_id].present?
-    #   @post.image = Image.find(post_params[:image_id])
-    # end
-    
     if @post.update_attributes(post_params)
       render json: @post.to_json(include: :tags), status: :ok
     else
@@ -61,7 +57,6 @@ class Admin::PostsController < Admin::AuthorizedController
   end
   
   def post_params
-    # TODO send tags as one string
     params.require(:post).permit(:title, :text, :permalink)
   end
 
